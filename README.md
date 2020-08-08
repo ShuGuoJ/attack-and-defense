@@ -3,6 +3,6 @@
 # Experiment
 1.证明对于给定的object的图像和不包含此obejct的图像，神经网络可能会将其分类为第一类。  
 在这里，我使用最大激活值的方法来最大化在imagenet上训练的vgg16网络的某一label概率以获得其输入图像。代码见generate.py。迭代过程中，输入图像的LOSS和其对应label的概率如下图所示：  
-![image]()
-![image]()
+![image](image/loss&&probability.PNG)  
+![image](image/visdom_image.jpg)  
 对于卷积神经网络能够将不包含给定object的图像也分为了object class的解释如下：训练图像的space为现实生活的一个subsapce,我们将模型在这一个subspace所学习到的分类界面放入到一个更大的space中，虽然它能够很好地划分subspace中的object,但是它却缺少了subspace中的objects与那个更大的space中其它object的分界线。所以这导致了模型在一个更大的space中，它也能够将不包含给定Object对象的图像也为object类。这也是在可视化模型结果的时候，我们需要引入图像领域的prior knowledge的原因。
