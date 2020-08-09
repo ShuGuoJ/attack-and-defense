@@ -25,9 +25,9 @@ NOTE：在改变原始图像的pixel时，我们需要对其改变范围进行�
 图像的限制:  
 ![image](data/constrain.gif)  
 l2范数  
-![image](data/l2-norm.gif)  
+![image](data/l2_norm.gif)  
 无穷范数  
-![image](data/l-infinity.gif)  
+![image](data/l_infinity.gif)  
 3.黑盒攻击  
 除了白盒攻击之外，我们还可以使用黑盒攻击。黑盒攻击是在未知模型参数的情况下来对模型进行攻击。  
 （1）假若我们知道训练的数据集，那么我们可以使用一个模型来mimic我们要攻击的模型，再进而使用白盒攻击的方法来获得攻击的image。  
