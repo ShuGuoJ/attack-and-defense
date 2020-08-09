@@ -36,4 +36,4 @@ l2范数
 防御分为被动防御和主动防御。  
 被动防御有smoothing,squeeze和randomization。其中smoothing相当于滤波器，它能够帮助我们平滑image的像素。  
 主动防御，相当于我们将攻击的image也加入到训练数据集中来训练模型。  
-![image](data/defense.png)
+![image](image/defense.png)
