@@ -9,7 +9,7 @@
 2.白盒攻击  
 白盒攻击是在我们知道给定模型的参数时对特定图像进行攻击，使模型分类错误。这其中又可以分为无目标的攻击和特定目标的攻击。对于前者，我们要求模型错误地分类给定的图像；而对于后者，我们不仅要求模型错误地分类给定的图像，还要将其分类为我们所指定的某一类。两者的loss function如下所示：  
 无目标的loss function  
-![image](data/non_target.gif)  
+![image](data/non-target.gif)  
 有目标的loss function  
 ![image](data/target.gif)  
 在这里，我使用了无目标攻击的Loss function来修改给定的image。原始图像如下所示:  
